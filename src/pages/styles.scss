@@ -32,10 +32,23 @@ html, body{
     align-items: center;
 }
 
-.coins{
-    align-self: self-end;
-    margin: 10px;
+.top-bar{
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .links{
+        text-decoration: none;
+        color: $button-background;
+    }
+    .coins{
+    
+        margin-left: 10px;
+    }
 }
+
+
 
 .greetings{
     margin: 0 20px 40px;

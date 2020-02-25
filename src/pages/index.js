@@ -16,11 +16,10 @@ const IndexPage = () => (
     <SEO title="Study Dino" />
 
 <div class="top-bar">
-  <Link to="/inventory/">inventory-icon</Link>
-  <Link to="/shop/">shop-icon</Link>
-  <Link to="/settings/">settings-icon</Link>
+  <Link to="/shop/" class="links">Shop</Link>
+  <span class="coins">30</span>
 </div>
-<span class="coins">30</span>
+
 <p class="greetings">Hi DynamicallyChanged</p>
 
 <div className="start-grp">
