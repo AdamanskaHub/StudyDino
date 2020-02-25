@@ -24,6 +24,8 @@ html, body{
 
 .marginer {
     max-width: 960px;
+    min-width: 320px;
+    width: 100%;
     flex: 1 1 auto;
     background-color: yellow;
     display: flex;

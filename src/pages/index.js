@@ -8,43 +8,43 @@ import SEO from "../components/seo"
 import "../pages/styles.scss"
 import dino from "../images/dino.png"
 
+const greetings = ["Hello, I hope you're ready to focus","Hey, let's do this", "Other greeting"];
+const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+
+console.log("random month", randomGreeting);
+
 const IndexPage = () => (
   // <Layout>
-  <div class="container">
+  <div className="container">
     <div className="marginer">
 
-    <SEO title="Study Dino" />
+      <SEO title="Study Dino" />
 
-<div class="top-bar">
-  <Link to="/shop/" class="links">Shop</Link>
-  <span class="coins">30</span>
-</div>
+      <div className="top-bar">
+        <Link to="/shop/" className="links">Shop</Link>
+        <span className="coins">30</span>
+      </div>
 
-<p class="greetings">Hi DynamicallyChanged</p>
+<p className="greetings">{randomGreeting}</p>
 
-<div className="start-grp">
+      <div className="start-grp">
 
-  <div className="start-grp__top">
-    <button className="time-adjust minus">-</button>
-    <input type="time" className="time-input" min="00:10" max="08:00" required  />
-    <button className="time-adjust plus">+</button>
-  </div>
+        <div className="start-grp__top">
+          <button className="time-adjust minus">-</button>
+          <input type="time" className="time-input" min="00:10" max="08:00" required />
+          <button className="time-adjust plus">+</button>
+        </div>
 
-  <a href="" class="eightbit-btn">START</a>
+        <a href="" className="eightbit-btn">START</a>
 
-</div>
+      </div>
 
-<div className="img-container">
-  <img class="start-dino" src={dino} alt="dino" />
-</div>
+      <div className="img-container">
+        <img className="start-dino" src={dino} alt="dino" />
+      </div>
 
 
     </div>
-    
-
-
-
-
   </div>
 
 
