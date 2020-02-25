@@ -8,13 +8,18 @@ import SEO from "../components/seo"
 import "../pages/styles.scss"
 import dino from "../images/dino.png"
 
+// =================== J S =================
+
 const greetings = ["Hello, I hope you're ready to focus","Hey, let's do this", "Other greeting"];
 const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
 
 console.log("random month", randomGreeting);
 
+
+// ================= H T M L ===============
+
 const IndexPage = () => (
-  // <Layout>
+
   <div className="container">
     <div className="marginer">
 
@@ -47,9 +52,6 @@ const IndexPage = () => (
     </div>
   </div>
 
-
-
-  // </Layout>
 )
 
 export default IndexPage
