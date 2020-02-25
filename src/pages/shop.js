@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 import Items from "../components/items"
 import "../pages/styles.scss"
-import img from "../images/dino.png"
+// import img from "../images/dino.png"
 
 const Shop = () => (
   <div className="container">

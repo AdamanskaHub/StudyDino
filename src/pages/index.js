@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 // import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 
 import "../pages/styles.scss"
@@ -10,10 +10,8 @@ import dino from "../images/dino.png"
 
 // =================== J S =================
 
-const greetings = ["Hello, I hope you're ready to focus","Hey, let's do this", "Other greeting"];
+const greetings = ["Hello, I hope you're ready to focus", "Hey, let's do this", "Other greeting"];
 const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-console.log("random month", randomGreeting);
 
 
 // ================= H T M L ===============
@@ -30,7 +28,7 @@ const IndexPage = () => (
         <span className="coins">30</span>
       </div>
 
-<p className="greetings">{randomGreeting}</p>
+      <p className="greetings">{randomGreeting}</p>
 
       <div className="start-grp">
 
