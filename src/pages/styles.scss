@@ -6,7 +6,68 @@ $button-background: #92CD41;
 $sec-button-background: #76c442;
 $shadow-color:  #4AA52E;
 $outline-color: #333;
+$font-color: #333;
+$font: 'Press Start 2P', monospace;
 
+html, body{
+    background-color: #f4f4f4;
+    height: 100%;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marginer {
+    max-width: 960px;
+    flex: 1 1 auto;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coins{
+    align-self: self-end;
+    margin: 10px;
+}
+
+.greetings{
+    margin: 0 20px 40px;
+    color: $font-color;
+    font-size: 20px;
+}
+
+.start-grp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-input{
+    font-family: $font;
+    background-color: rgba(255,255,255,.5);
+    border: 6px solid $outline-color; 
+    height: 60px;
+    padding: 0 10px 0 32px;
+    margin: 0 10px 20px;
+}
+
+.time-adjust{
+    font-family: $font;
+    background-color: rgba(255,255,255,.5);
+    inset: none;
+    border: 6px solid $outline-color; 
+    height: 60px;
+    width: 60px; 
+    font-weight: bold;
+}
 
 .eightbit-btn {
     background: $button-background;
@@ -15,7 +76,7 @@ $outline-color: #333;
     text-align: center;
     font-size: 24px;
     padding: 12px;
-    font-family: 'Press Start 2P', monospace;
+    font-family: $font;
     text-decoration: none; 
     color: white;
     box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px $shadow-color;
@@ -53,4 +114,20 @@ $outline-color: #333;
         border-right: $outline-width $outline-color solid;
     }
     
+}
+
+.top-bar {
+
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    margin-top: 40px;
+}
+
+.start-dino {
+    max-height: 300px;
 }
