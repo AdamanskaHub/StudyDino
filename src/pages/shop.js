@@ -2,7 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 import SEO from "../components/seo"
+import Items from "../components/items"
 import "../pages/styles.scss"
+import img from "../images/dino.png"
 
 const Shop = () => (
   <div className="container">
@@ -17,9 +19,13 @@ const Shop = () => (
       <p>Welcome to the Shop</p>
 
       <div className="shop-container">
-        <div className="item">
-          
-        </div>
+        <Items />
+        <Items />
+        <Items />
+        <Items />
+        <Items />
+        <Items />
+        <Items />
       </div>
 
     </div>
